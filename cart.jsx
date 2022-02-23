@@ -92,7 +92,7 @@ const Products = (props) => {
   } = ReactBootstrap;
   //  Fetch Data
   const { Fragment, useState, useEffect, useReducer } = React;
-  const [query, setQuery] = useState("http://localhost:1337/products");
+  const [query, setQuery] = useState("http://localhost:1337/api/products");
   const [{ data, isLoading, isError }, doFetch] = useDataApi(
     "http://localhost:1337/api/products",
     {
@@ -116,7 +116,7 @@ const Products = (props) => {
 
   let list = items.map((item, index) => {
     //let n = index + 1049;
-    //let url = "https://picsum.photos/50/50/" + n + "/50/50";
+    //let url = "https://picsum.photos/" + n + "/50/50";
 
     return (
       <li key={index}>
