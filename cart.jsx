@@ -116,7 +116,7 @@ const Products = (props) => {
 
   let list = items.map((item, index) => {
     //let n = index + 1049;
-    //let url = "https://picsum.photos/id/" + n + "/50/50";
+    //let url = "https://picsum.photos/50/50/" + n + "/50/50";
 
     return (
       <li key={index}>
